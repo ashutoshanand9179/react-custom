@@ -1,28 +1,29 @@
 import React,{Component} from 'react'
+import {Link} from 'react-router-dom'
 export default class Header extends Component{
     render(){
         return(
             <header className="" id="header">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="pull-left" id="logo">
                         <h1><a className="scrollto" href="#intro">SiteLogo</a></h1>
                     </div>
                     <nav id="nav-menu-container">
                         <ul className="nav-menu sf-js-enabled sf-arrows">
                             <li className="menu-active menu-item-active">
-                                <a href="#intro">Home</a>
+                                <Link to="/">Home</Link>
                             </li>
                             <li className="">
-                                <a href="#about">About Us</a>
+                                <Link to="about">About Us</Link>
                             </li>
                             <li className="">
-                                <a href="#services">Services</a>
+                                <Link to="services">Services</Link>
                             </li>
                             <li className="">
-                                <a href="#portfolio">Portfolio</a>
+                                <Link to="login">Login</Link>
                             </li>
                             <li>
-                                <a href="#team">Team</a>
+                                <Link to="register">Sign up</Link>
                             </li>
                             <li className="menu-has-children">
                                 <a className="sf-with-ul" href="">Drop Down</a>
